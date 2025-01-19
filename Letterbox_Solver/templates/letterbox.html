@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Letter Boxed Puzzle Solver</title>
+</head>
+<body>
+    <h1>Letter Boxed Puzzle Solver</h1>
+    <form method="POST">
+        <label for="side1">Top Side:</label><br>
+        <input type="text" name="side1" id="side1" required><br><br>
+        <label for="side2">Left Side:</label><br>
+        <input type="text" name="side2" id="side2" required><br><br>
+        <label for="side3">Right Side:</label><br>
+        <input type="text" name="side3" id="side3" required><br><br>
+        <label for="side4">Bottom Side:</label><br>
+        <input type="text" name="side4" id="side4" required><br><br>
+        
+        <!-- Two buttons for submitting the form with different values -->
+        <button type="submit" name="solution_type" value="one_two_word">Solve for One/Two Words</button>
+        <button type="submit" name="solution_type" value="three_word">Solve for Three Words</button>
+    </form>
+
+    {% if result %}
+        <h2>{{ 'Three Word Solutions' if three_word_search else 'Solutions' }}:</h2>
+        <ul>
+            {% for solution in result %}
+                <li><strong>{{ solution }}</strong></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>No Solutions Found</h2>
+    {% endif %}
+</body>
+</html>
