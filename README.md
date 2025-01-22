@@ -19,7 +19,7 @@ If two word solution is not possible, does the same for three words, however thi
 
 App
 
-Front end that takes in input letters and shows results.
+Front end HTML and python that takes in input letters and shows results.
 
 
 
