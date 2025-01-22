@@ -3,7 +3,7 @@ This is an app that allows the user to input the New York Times Game Letter Boxe
 
 The game involves a box with 3 letters on each side. The goal of the game is to connect all 12 letters in as few words as possible, with the conditions that letters from the same side cannot be used consecutively and that the last letter of the prior word must be the first letter of the next word. Typically there exists a two word solution, however in some cases three words are necessary.
 
-##Files:
+## Files:
 
 Letterboxed_word_cleaner
 
